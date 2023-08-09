@@ -1,0 +1,16 @@
+@media (max-width:992px){
+    .footer-inner{
+        margin: auto !important;
+    }
+    .logo{
+        /* width: 1rem; */
+        display: none;
+    }
+    .logo-text{
+        font-size: .8rem !important;
+    }
+    .tag-line{
+        margin: 0PX !important;
+        font-size: .8rem !important;
+    }
+}

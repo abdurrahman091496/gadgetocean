@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadget Ocean | Tech E-commerce Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Gadget Ocean | Tech E-commerce Website">
+  <meta name="keyword" content="Gadget Ocean, tech,">
+  <meta name="author" content="Isty | www.devbyisty.xyz">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- responsive css  -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header start  -->
+    <header>
+      <div class="topbar border-bottom mt-2">
+        <div class="container-fluid px-0">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="text-capitalize text-center text-dark fw-bold py-1 fs-6"> Free
+                Shipping on oder over $100* </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- nav start  -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-light mt-2">
+        <div class="container">
+          <a class="navbar-brand brandlogo d-lg-none" href="index.html"><img src="assets/images/favicon.png" class="img-fluid logo mb-1" alt="logo"> gadget Ocean</a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span> <i class="fa-solid fa-caret-down"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown me-4 ms-auto ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="javascript:void(0)">Smart Gadgets</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Mobile Covers</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Wireless Gadgets</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Mobile Chargers</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Power Banks</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Mobile Batteries</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-auto ">
+                <a class="nav-link active" aria-current="page" href="#smartwatch">Smart Watch</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link" href="#headphone">Headphones</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link" href="#drone">Drone</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="javascript:void(0)">Smart Gadgets</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Mobile Covers</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Wireless Gadgets</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Mobile Chargers</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Power Banks</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Mobile Batteries</a></li>
+                </ul>
+              </li> -->
+            </ul>
+            <a class="navbar-brand brandlogo d-none d-lg-block mx-auto" href="index.html"><img src="assets/images/favicon.png" class="img-fluid logo mb-1" alt="logo"> gadget Ocean</a>
+            <form class="d-flex ms-auto" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                aria-expand="false">
+              <!-- <button class="btn btn-outline-dark me-2 rounded-circle" type="submit"><i
+                  class="fa-solid fa-user"></i></button> -->
+              <button class="btn btn-outline-dark me-2 rounded-circle" type="submit"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="btn btn-outline-dark me-2 rounded-circle" type="submit"><i
+                    class="fa-solid fa-user"></i></button>
+              <button class="btn btn-outline-dark me-2 rounded-circle" type="submit"><i
+                  class="fa-regular fa-heart"></i></button>
+              <button class="btn btn-outline-dark me-2 rounded-circle" type="submit"><i
+                  class="fa-solid fa-cart-shopping"></i> <span class="text-light bg-danger fw-bold text-center cart-num">0</span></button>
+                  
+            </form>
+          </div>
+
+        </div>
+      </nav>
+      <!-- nav end  -->
+    </header>
+    <!-- header end  -->
+
+    <!-- hero start -->
+    <div class="hero-section">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- <img src="assets/videos/smartwatchpromo.mp4" class="d-block w-100" alt="..."> -->
+            <video src="assets/videos/smartwatchpromo.mp4" muted type="video/mp4" class="d-block w-100 c-vid video-fluid"
+              autoplay loop alt="Smart Watch Promo"></video>
+            <div class=" carousel-caption text-uppercase text-center mt-5 pt-5 top-0">
+              <h1 class=" text-center fs-1 mt-5 mb-3 smartwatch fw-bold">Enhance <span class="fs-1 brandclr">Your Style</span> <br> with Tranding Smart Watches</h1>
+              <button class="btn px-4 py-0 rounded-3"><a href="#smartwatch"
+                class=" text-light link-underline-light">
+                <p class="mt-3 fw-bold text-center ">Explore More</p>
+              </a></button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video src="assets/videos/headphonepromo.mp4" muted type="video/mp4" class="d-block w-100 c-vid video-fluid"
+              autoplay loop alt="headphone"></video>
+            <div class="carousel-caption text-uppercase mt-5 pt-5 top-0">
+              <h1 class=" text-center fs-1 mt-5 mb-3 fw-bold gaming">Start <span class="fs-1 brandclr">Your Gaming</span> with <br>Tranding headphones</h1>
+              <button class="btn btn-outline-light border border-2 px-3 py-0 rounded-3"><a href="#headphone"
+                  class="link-underline-light text-light">
+                  <p class="fw-bold mt-3">Explore More</p>
+                </a></button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video src="assets/videos/dronepromo.mp4" muted type="video/mp4" class="d-block w-100 c-vid video-fluid" autoplay
+              loop alt="drone"></video>
+            <div class="carousel-caption text-uppercase mt-5 pt-5 top-0">
+              <h1 class=" text-center fs-1 mt-5 mb-3 fw-bold drone">Shoot <span class="fs-1 brandclr">Your Dream</span> <br>with Tranding Drone</h1>
+              <button class="btn btn-outline-light border border-2 px-3 py-0 rounded-3"><a href="#drone"
+                  class="link-underline-light text-light">
+                  <p class="fw-bold mt-3">Explore More</p>
+                </a></button>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+    </div>
+    <!-- hero end  -->
+
+    <!-- deal start  -->
+    <div class="deal container">
+      <ul class="nav nav-tabs border-bottom mt-3">
+        <li class="nav-item d-flex justify-content-end">
+          <h5 class="nav-link active fs-6 fw-bold mt-1"> <i
+              class="fa-solid fa-bell brandclr me-1"></i> Today's Deal</h5>
+          <p class=" time ms-4 mt-2 brandclr fw-bold bg-secondary p-1 rounded-3">Ends In- 111 : 25 : 26</p>
+        </li>
+      </ul>
+    </div>
+    <div class="deal-product container">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- card 1 -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/ipod.png" class="card-img-top" alt="ipod">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Toat AirPods</h5>
+                    <p class="card-text">Best Wireless Airpods AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$163.56</ins><del class="ps-1 text-danger"><small>$263.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/router.png" class="card-img-top" alt="router">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">X Gaming Router</h5>
+                    <p class="card-text">Best Gaming Router AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$263.56</ins><del class="ps-1 text-danger"><small>$363.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/drone (1).png" class="card-img-top" alt="drone">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Hi-Fi Drone</h5>
+                    <p class="card-text">Best Resulation Drone AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$563.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- card 2 -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/smartwatch 1 (1).png" class="card-img-top mt-3" alt="smartwatch">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">NXT Smart Watch</h5>
+                    <p class="card-text">Best Smart Watch AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$130.56</ins><del class="ps-1 text-danger"><small>$253.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/keyboard.png" class="card-img-top mt-3" alt="keyboard">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Keyboard Mouse Combo</h5>
+                    <p class="card-text">Best Gaming Combo AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$100.56</ins><del class="ps-1 text-danger"><small>$263.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/headphone (1).png" class="card-img-top mt-3" alt="headphone">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">vXn Gaming Earphone</h5>
+                    <p class="card-text">Best Gaming Earphone AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$153.56</ins><del class="ps-1 text-danger"><small>$363.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- card 3 -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/keyboard.png" class="card-img-top mt-3" alt="keyboard">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Keyboard Mouse Combo</h5>
+                    <p class="card-text">Best Gaming Combo AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$150.56</ins><del class="ps-1 text-danger"><small>$283.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/router.png" class="card-img-top mt-3" alt="router">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">X Gaming Router</h5>
+                    <p class="card-text">Best Gaming Router AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$100.56</ins><del class="ps-1 text-danger"><small>$263.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card deal">
+                  <img src="assets/images/drone (3).png" class="card-img-top mt-3" alt="drone">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">High Speed Drone</h5>
+                    <p class="card-text">Best Speedy Drone AT Best Price</p>
+                    <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$400.56</ins><del class="ps-1 text-danger"><small>$663.56</small></del></p>
+                    <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Buy Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span aria-hidden="true"> <i class="fa-solid fa-circle-chevron-left pe-5 fs-4"></i> </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span aria-hidden="true"> <i class="fa-solid fa-circle-chevron-right fs-4 ps-5"></i> </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- deal end  -->
+
+    <!-- smartwatch start  -->
+    <div class="smartwatch-section">
+      <div class="smartwatch-banner container my-5" id="smartwatch">
+        <img src="assets/images/smartwatchbanner.jpg" class="img-fluid rounded-2 " alt="smartwatch banner">
+        <div class="smartwatch-header container">
+          <ul class="nav nav-tabs border-bottom mt-3">
+            <li class="nav-item d-flex justify-content-end">
+            <h5 class="nav-link active fs-6 fw-bold brandclr">Smartwatch Deal</h5>
+              <a href="javascript:void(0)" class=" explore text-decoration-none ms-4 mt-2 fw-bold">Explorer More <i class="fa-solid fa-angles-right"></i> </a>
+            </li>
+          </ul>
+        </div>
+        <div class="smartwatch-products container mt-3">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card pro-1 rounded-5" >
+                <img src="assets/images/smartwatch 1 (2).png " class="card-img-top mt-3 img-fluid" alt="smartwatch">
+               <div class="pro-2">
+                <img src="assets/images/smartwatch 1 (1).png" class="card-img-top mt-3 img-fluid" alt="smartwatch">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="#" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Ula Smartwatch</h5></a>
+                  <p class="card-text">Best Feature Smartwatch AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$163.56</ins><del class="ps-1 text-danger"><small>$263.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5" >
+                <img src="assets/images/smartwatch 1 (3).png" class="card-img-top mt-3 img-fluid" alt="smartwatch">
+                <div class="pro-2">
+                <img src="assets/images/smartwatch 1 (5).png" class="card-img-top mt-3 img-fluid" alt="smartwatch">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">L+ Smartwatch</h5></a>
+                  <p class="card-text">Best Focused Drone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$263.56</ins><del class="ps-1 text-danger"><small>$363.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5" >
+                <img src="assets/images/smartwatch 1 (4).png" class="card-img-top mt-3" alt="smartwatch">
+                <div class="pro-2">
+                <img src="assets/images/smartwatch 1 (2).png" class="card-img-top mt-3 img-fluid" alt="smartwatch">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr"><h5 class="card-title">Chu Smartwatch</h5></a>
+                  <p class="card-text">Best Long Life Smartwatch AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$563.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5" >
+                <img src="assets/images/smartwatch 1 (5).png" class="card-img-top" alt="smartwatch">
+                <div class="pro-2">
+                  <img src="assets/images/smartwatch 1 (3).png" class="card-img-top mt-3 img-fluid" alt="smartwatch">
+                  <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                  <span><i class="fa-solid fa-heart wish2"></i></span>
+                 </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Cvic Smartwatch</h5></a>
+                  <p class="card-text">Best Display Smartwatch AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$563.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5" >
+                <img src="assets/images/smartwatch 1 (4).png" class="card-img-top" alt="smartwatch">
+                <div class="pro-2">
+                <img src="assets/images/smartwatch 1 (2).png" class="card-img-top mt-3 img-fluid" alt="smartwatch">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Dvic Smartwatch</h5></a>
+                  <p class="card-text">Best Display Smartwatch AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$563.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5" >
+                <img src="assets/images/smartwatch 1 (1).png" class="card-img-top" alt="smartwatch">
+                <div class="pro-2">
+                <img src="assets/images/smartwatch 1 (5).png" class="card-img-top mt-2 img-fluid" alt="smartwatch">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Sdic Smartwatch</h5></a>
+                  <p class="card-text">Best Display Smartwatch AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$563.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- smartwatch end  -->
+
+    <!-- headphone start  -->
+    <div class="headphone-section">
+      <div class="headphone-banner container my-5" id="headphone">
+        <img src="assets/images/headphonebanner.jpg" class="img-fluid rounded-2" alt="headphone banner">
+        <div class="headphone-header container">
+          <ul class="nav nav-tabs border-bottom mt-3">
+            <li class="nav-item d-flex justify-content-end">
+            <h5 class="nav-link active fs-6 fw-bold brandclr">Headphone Deal</h5>
+              <a href="javascript:void(0)" class=" explore text-decoration-none ms-4 mt-2 fw-bold">Explorer More <i class="fa-solid fa-angles-right"></i> </a>
+            </li>
+          </ul>
+        </div>
+        <div class="smartwatch-products container mt-3">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/headphone (5).png " class="card-img-top mt-3 img-fluid" alt="headphone">
+               <div class="pro-2">
+                <img src="assets/images/headphone (3).png" class="card-img-top mt-3 img-fluid" alt="headphone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="#" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Msic Headphone</h5></a>
+                  <p class="card-text">Best Music Headphone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$263.56</ins><del class="ps-1 text-danger"><small>$363.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/headphone (2).png" class="card-img-top mt-3 img-fluid" alt="headphone">
+                <div class="pro-2">
+                <img src="assets/images/headphone (4).png" class="card-img-top mt-3 img-fluid" alt="headphone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">ynX Headphone</h5></a>
+                  <p class="card-text">Best Gaming Headphone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$483.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/headphone (3).png" class="card-img-top mt-3" alt="headphone">
+                <div class="pro-2">
+                <img src="assets/images/headphone (5).png" class="card-img-top mt-3 img-fluid" alt="headphone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr"><h5 class="card-title">HBD Headphone</h5></a>
+                  <p class="card-text">Best Wireless Headphone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$323.56</ins><del class="ps-1 text-danger"><small>$563.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/headphone (4).png" class="card-img-top mt-2" alt="headphone">
+                <div class="pro-2">
+                  <img src="assets/images/headphone (2).png" class="card-img-top mt-0 img-fluid" alt="headphone">
+                  <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                  <span><i class="fa-solid fa-heart wish2"></i></span>
+                 </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Olciv Headphone</h5></a>
+                  <p class="card-text">Best Durable Headphone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$163.56</ins><del class="ps-1 text-danger"><small>$363.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/headphone (5).png" class="card-img-top" alt="headphone">
+                <div class="pro-2">
+                <img src="assets/images/headphone (3).png" class="card-img-top mt-0 img-fluid" alt="smartwatch">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">BSS Headphone</h5></a>
+                  <p class="card-text">Best BASS Headphone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$333.56</ins><del class="ps-1 text-danger"><small>$433.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/headphone (2).png" class="card-img-top" alt="smartwatch">
+                <div class="pro-2">
+                <img src="assets/images/headphone (4).png" class="card-img-top mt-2 img-fluid" alt="headphone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Solid Headphone</h5></a>
+                  <p class="card-text">Best Noise Free Headphone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$563.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- headphone end  -->
+
+    <!-- drone start  -->
+    <div class="drone-section">
+      <div class="drone-banner container my-5" id="drone">
+        <img src="assets/images/dronebanner.jpg" class="img-fluid rounded-2" alt="drone banner">
+        <div class="drone-header container">
+          <ul class="nav nav-tabs border-bottom mt-3">
+            <li class="nav-item d-flex justify-content-end">
+            <h5 class="nav-link active fs-6 fw-bold brandclr">Drone Deal</h5>
+              <a href="javascript:void(0)" class=" explore text-decoration-none ms-4 mt-2 fw-bold">Explorer More <i class="fa-solid fa-angles-right"></i> </a>
+            </li>
+          </ul>
+        </div>
+        <div class="drone-products container mt-3">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/drone (1).png" class="card-img-top mt-3 img-fluid" alt="drone">
+               <div class="pro-2">
+                <img src="assets/images/drone (2).png" class="card-img-top mt-3 img-fluid" alt="drone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="#" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">WH-66 Drone</h5></a>
+                  <p class="card-text">Best Feature Drone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$263.56</ins><del class="ps-1 text-danger"><small>$363.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/drone (2).png" class="card-img-top mt-3 img-fluid" alt="drone">
+                <div class="pro-2">
+                <img src="assets/images/drone (3).png" class="card-img-top mt-3 img-fluid" alt="drone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">NVY Drone</h5></a>
+                  <p class="card-text">Best Focused Drone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$263.56</ins><del class="ps-1 text-danger"><small>$363.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/drone (3).png" class="card-img-top" alt="drone">
+                <div class="pro-2">
+                <img src="assets/images/drone (4).png" class="card-img-top mt-3 img-fluid" alt="drone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr"><h5 class="card-title">Chunch Drone</h5></a>
+                  <p class="card-text">Best Long Life Drone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$433.56</ins><del class="ps-1 text-danger"><small>$503.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/drone (4).png" class="card-img-top" alt="drone">
+                <div class="pro-2">
+                  <img src="assets/images/drone (2).png" class="card-img-top mt-3 img-fluid" alt="drone">
+                  <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                  <span><i class="fa-solid fa-heart wish2"></i></span>
+                 </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Cvic Drone</h5></a>
+                  <p class="card-text">Best Display Drone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$269.56</ins><del class="ps-1 text-danger"><small>$333.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/drone (1).png" class="card-img-top" alt="drone">
+                <div class="pro-2">
+                <img src="assets/images/drone (3).png" class="card-img-top mt-2 img-fluid" alt="drone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Jvic Drone</h5></a>
+                  <p class="card-text">Best Display Drone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$363.56</ins><del class="ps-1 text-danger"><small>$463.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pro-1 rounded-5">
+                <img src="assets/images/drone (2).png" class="card-img-top" alt="drone">
+                <div class="pro-2">
+                <img src="assets/images/drone (4).png" class="card-img-top mt-2 img-fluid" alt="drone">
+                <span><i class="fa-regular fa-heart wish brandclr"></i></span>
+                <span><i class="fa-solid fa-heart wish2"></i></span>
+               </div>
+                <div class="card-body text-center">
+                  <a href="" class="text-decoration-none brandclr fw-bold"><h5 class="card-title">Sdic drone</h5></a>
+                  <p class="card-text">Best Display Drone AT Best Price</p>
+                  <p class="fw-bold"> <ins class="text-decoration-none brandclr fw-bold">$463.56</ins><del class="ps-1 text-danger"><small>$663.56</small></del></p>
+                  <button class="btn border border-2"> <a href="javascript:void(0)" class="text-decoration-none text-dark">Quick View</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- drone end  -->
+
+    <!-- service start  -->
+      <div class="footer-area h-100 bg-light container-fluid py-5 my-5 border-top border-bottom">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col d-flex justify-content-center align-item-center">
+              <span><i class="fa-solid fa-money-bills fs-3 brandclr d-flex align-item-center mt-2"></i></span>
+              <h6 class="ms-3 fw-bold text-dark">CASH ON DELIVERY <br> <span class="fw-light text-black-50">Pay cash at your doorstep</span></h6>
+            </div>
+            <div class="col d-flex justify-content-center align-item-center">
+              <span><i class="fa-solid fa-rotate-left fs-3 brandclr d-flex align-item-center mt-2"></i></span>
+              <h6 class="ms-3 fw-bold text-dark">HAPPY EASY RETURN <br> <span class="fw-light text-black-50">7 days return facility</span></h6>
+            </div>
+            <div class="col d-flex justify-content-center align-item-center ">
+              <span><i class="fa-solid fa-truck-ramp-box fs-3 brandclr d-flex align-item-center mt-2"></i></span>
+              <h6 class="ms-3 fw-bold text-dark">Fastest DELIVERY <br> <span class="fw-light text-black-50">All over the world</span></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- service end  -->
+
+    <!-- subscribe start  -->
+    <div class="subscribe container-fluid py-5 my-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 w-50 mx-auto">
+            <h5 class="fw-bold text-center text-light mb-3">Join our weekly newsletter and <span class="brandclr">get 15% off</span> your first purchase</h5>
+      <div class="input-group">
+        <input type="email" class="form-control me-3" placeholder="Email">
+        <span class="input-group-btn">
+          <button class="btn" type="submit"> <i class="fa-solid fa-arrow-right-to-bracket text-light fs-4"></i></button>
+        </span>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- subscribe end  -->
+
+    <!-- footer start  -->
+    <footer>
+      <div class="footer-area h-100 bg-light container-fluid">
+        <div class=" footer-inner container ms-sm-5 ps-sm-5 ">
+          <div class="row row-cols-1 row-cols-md-4 g-4 ">
+            <div class="col-lg-5 col my-5">
+              <a class="brandlogo text-decoration-none fs-4 logo-text" href="index.html"><img src="assets/images/favicon.png" class="img-fluid logo" alt="logo"> gadget Ocean</a>
+              <p class="text-black-50 ms-5 tag-line">Your Trusted Tech Partner</p>
+              <div class="mt-5">
+              <img src="assets/images/qr code.png" class="img-fluid ft-img mb-2" alt="qr code">
+              <div class="d-flex flex-column mx-auto me-sm-5">
+                <span class="brandclr fw-bold mb-2">Get Our App</span>
+                <a href="https://www.apple.com/app-store/"><img src="assets/images/apple-app-store-logo.jpg" class="img-fluid rounded-3 store" alt="app store"></a>
+              <a href="https://play.google.com/store/games?device=windows&pli=1"><img src="assets/images/play store.png" class="img-fluid store" alt="app store"></a>
+              </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col my-5">
+              <h5 class="brandclr fw-bold fs-5"> Information </h5>
+              <ul class="list-unstyled mt-5 ">
+                <li class="mt-2"><a href="" class="text-decoration-none text-dark mt-5 info">FAQ</a></li>
+                <li class="mt-2"><a href="" class="text-decoration-none text-dark mt-5 info">Contact Us</a></li>
+                <li class="mt-2"><a href="" class="text-decoration-none text-dark mt-5 info">Shipping & Delivery</a></li>
+                <li class="mt-2"><a href="" class="text-decoration-none text-dark mt-5 info">Returns & Exchange</a></li>
+                <li class="mt-2"><a href="" class="text-decoration-none text-dark mt-5 info">Our Story</a></li>
+                <li class="mt-2"><a href="" class="text-decoration-none text-dark mt-5 info">Career</a></li>
+                <li class="mt-2"><a href="" class="text-decoration-none text-dark mt-5 info">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col my-5">
+              <h5 class="brandclr fw-bold fs-5"> Social </h5>
+              <ul class="list-unstyled mt-5 ">
+                <li><a href="instagram.com" class="text-decoration-none text-dark mt-5 info"><i class="fa-brands fa-instagram mt-3"></i> Instagram</a></li>
+                <li><a href="pinterest.com" class="text-decoration-none text-dark mt-5 info"><i class="fa-brands fa-pinterest-p mt-3"></i> Pinterest</a></li>
+                <li><a href="facebook.com" class="text-decoration-none text-dark mt-5 info"><i class="fa-brands fa-facebook-f mt-3"></i> Facebook</a></li>
+                <li><a href="youtube.com" class="text-decoration-none text-dark mt-5 info"><i class="fa-brands fa-youtube mt-3"></i> Youtube</a></li>
+                <li><a href="twitter.com" class="text-decoration-none text-dark mt-5 info"><i class="fa-brands fa-twitter mt-3"></i> Twitter</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col my-5">
+              <h5 class="brandclr fw-bold fs-5"> Payment Support </h5>
+              <ul class="list-unstyled mt-5 ">
+                <li class="my-2"><img src="assets/images/paypal.png" class="img-fluid ft-img2" alt="paypal"></li>
+                <li class="my-2"><img src="assets/images/payoneer.png" class="img-fluid ft-img2" alt="payoneer"></li>
+                <li class="my-2"><img src="assets/images/visa.png" class="img-fluid ft-img2" alt="visa"></li>
+                <li class="my-2"><img src="assets/images/MasterCard.png" class="img-fluid ft-img2" alt="MasterCard"></li>
+                <li class="my-2"><img src="assets/images/stripe.png" class="img-fluid ft-img2" alt="stripe"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- copyright  -->
+      <div class="copyright border-top">
+        <div class="container-fluid px-0 py-0 bg-light">
+          <div class="row">
+            <div class="col-12">
+              <!-- <h5 class="text-capitalize text-center text-dark fw-bold py-1 fs-6"> Free
+                Shipping on oder over $100* </h5> -->
+                <p class="text-center copyright fw-bold text-uppercase pt-3"> &copy; 2023 <span class="brandclr">Gadget Ocean</span> Your Trusted Tech Partner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end  -->
+
+
+    <!-- hello button  -->
+    <span> <i class="fa-regular fa-message py-3 px-3 rounded-circle text-center hello-btn fs-3"></i> </span>
+
+
+
+
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
