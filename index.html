@@ -24,19 +24,31 @@
 <body>
   <div class="wrapper">
     <!-- header start  -->
-    <header>
-      <div class="topbar border-bottom mt-2">
+    <header id="header">
+      <div class="topbar border-bottom">
         <div class="container-fluid px-0">
           <div class="row">
             <div class="col-12">
-              <h5 class="text-capitalize text-center text-dark fw-bold py-1 fs-6"> Free
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <h5 class="text-capitalize text-center text-dark fw-bold py-1 fs-6"> Free
                 Shipping on oder over $100* </h5>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <h5 class="text-capitalize text-center text-dark fw-bold py-1 fs-6"> Discover New Tech Trend Product Available </h5>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <h5 class="text-capitalize text-center text-dark fw-bold py-1 fs-6"> Fastest Delivery All Over The Country </h5>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
       <!-- nav start  -->
-      <nav class="navbar sticky-top navbar-expand-lg bg-light mt-2">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand brandlogo d-lg-none" href="index.html"><img src="assets/images/favicon.png" class="img-fluid logo mb-1" alt="logo"> gadget Ocean</a>
           <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -116,7 +128,7 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div> -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item c-item active">
             <!-- <img src="assets/videos/smartwatchpromo.mp4" class="d-block w-100" alt="..."> -->
             <video src="assets/videos/smartwatchpromo.mp4" muted type="video/mp4" class="d-block w-100 c-vid video-fluid"
               autoplay loop alt="Smart Watch Promo"></video>
@@ -128,7 +140,7 @@
               </a></button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item c-item ">
             <video src="assets/videos/headphonepromo.mp4" muted type="video/mp4" class="d-block w-100 c-vid video-fluid"
               autoplay loop alt="headphone"></video>
             <div class="carousel-caption text-uppercase mt-5 pt-5 top-0">
@@ -139,7 +151,7 @@
                 </a></button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item c-item ">
             <video src="assets/videos/dronepromo.mp4" muted type="video/mp4" class="d-block w-100 c-vid video-fluid" autoplay
               loop alt="drone"></video>
             <div class="carousel-caption text-uppercase mt-5 pt-5 top-0">
@@ -764,7 +776,8 @@
     </footer>
     <!-- footer end  -->
 
-
+    <!-- scroll to top  -->
+    <a href="" class="scroll-top"><i class="fa-solid fa-angles-up py-3 px-3 rounded-3 text-center hello-btn fs-3"></i></a>
     <!-- hello button  -->
     <span> <i class="fa-regular fa-message py-3 px-3 rounded-circle text-center hello-btn fs-3"></i> </span>
 
@@ -775,7 +788,7 @@
 
   </div>
 
-
+  <script src="assets/js/app.js" async></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

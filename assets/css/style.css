@@ -3,6 +3,7 @@
 :root{
     --brandclr:#5BC0F8;
     --hardclr:rgb(61, 61, 61);
+    --bgclr:rgb(238, 247, 255);
 }
 
 *{
@@ -12,7 +13,7 @@
     font-family: 'PT Sans', sans-serif;
 }
 .logo{
-    width: 3rem;
+    width: 2rem;
 }
 .brandlogo:hover{
     color: var(--brandclr) !important;
@@ -20,6 +21,7 @@
 .brandlogo{
     font-family: 'Notable', sans-serif;
     color: var(--brandclr);
+    /* margin-top: .2rem !important; */
 }
 .brandclr{
     color: var(--brandclr) !important;
@@ -31,16 +33,20 @@
 html,body{
     width: 100%;
     height: 100%;
-    background-color: rgb(238, 247, 255);
+    background-color: var(--bgclr);
+}
+header{
+    background-color: var(--bgclr);
 }
 
 .wrapper{
     overflow-x: hidden;
 }
 
-/* .navbar{
-    position: sticky !important;
-    top: 0;
+/* .navbar .topbar{
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 999999;
 } */
 
 .navbar-brand:hover{
@@ -136,7 +142,7 @@ html,body{
 .carousel-caption h5{
     font-size: 10vw;
 }
-.carousel-item{
+.c-item {
     height: 456px;
 }
 .c-vid{
@@ -243,6 +249,16 @@ html,body{
 .copyright{
     font-size: .8rem;
     letter-spacing: .1rem;
+    background-color: var(--bgclr);
+}
+
+/* scroll to top  */
+.fa-angles-up{
+    position: fixed;
+    right: -1rem !important;
+    bottom: 20rem;
+    background-color: var(--hardclr);
+    color: var(--brandclr);
 }
 
 /* hello button  */
